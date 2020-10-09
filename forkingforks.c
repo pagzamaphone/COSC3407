@@ -7,6 +7,5 @@ int main()
 	fork();
 	fork();
 	printf("hello\n");
-	sleep(20000);
 	return 0;
 }
