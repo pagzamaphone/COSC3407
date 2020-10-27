@@ -1,3 +1,4 @@
+import java.util.List;
 public class FCFS implements Algorithm {
   private List<Task> queue;
 
