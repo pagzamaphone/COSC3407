@@ -28,13 +28,13 @@ class MyThread extends Thread
 			System.out.println("Starting " + threadName); 
 			try
 			{ 
-				// First, get a permit. 
-				System.out.println(threadName + " is waiting for a permit."); 
+				// First, get a semaphore. 
+				System.out.println(threadName + " is waiting for semaphore."); 
 			
 				// acquiring the lock 
 				sem.acquire(); 
 			
-				System.out.println(threadName + " gets a permit."); 
+				System.out.println(threadName + " gets semaphore."); 
 		
 				// Now, accessing the shared resource. 
 				// other waiting threads will wait, until this 
@@ -52,8 +52,8 @@ class MyThread extends Thread
 					System.out.println(exc); 
 				} 
 		
-				// Release the permit. 
-				System.out.println(threadName + " releases the permit."); 
+				// Release the semaphore. 
+				System.out.println(threadName + " releases the semaphore."); 
 				sem.release(); 
 		} 
 		
@@ -63,13 +63,13 @@ class MyThread extends Thread
 			System.out.println("Starting " + threadName); 
 			try
 			{ 
-				// First, get a permit. 
-				System.out.println(threadName + " is waiting for a permit."); 
+				// First, get semaphore. 
+				System.out.println(threadName + " is waiting for semaphore."); 
 			
 				// acquiring the lock 
 				sem.acquire(); 
 			
-				System.out.println(threadName + " gets a permit."); 
+				System.out.println(threadName + " gets semaphore."); 
 		
 				// Now, accessing the shared resource. 
 				// other waiting threads will wait, until this 
@@ -86,8 +86,8 @@ class MyThread extends Thread
 			} catch (InterruptedException exc) { 
 					System.out.println(exc); 
 				} 
-				// Release the permit. 
-				System.out.println(threadName + " releases the permit."); 
+				// Release the semaphore. 
+				System.out.println(threadName + " releases the semaphore."); 
 				sem.release(); 
 		} 
 	} 
@@ -99,7 +99,7 @@ public class SemaphoreDemo
 	public static void main(String args[]) throws InterruptedException 
 	{ 
 		// creating a Semaphore object 
-		// with number of permits 1 
+		// with number of semaphore 1 
 		Semaphore sem = new Semaphore(1); 
 		
 		// creating two threads with name A and B 
