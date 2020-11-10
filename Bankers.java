@@ -111,13 +111,13 @@ public class Bankers
 	public static void main(String[] args) 
 	{ 
 	int i, j, k; 
-	Bankers gfg = new Bankers(); 
+	Bankers b = new Bankers(); 
 		
-	gfg.initializeValues();	 
+	b.initializeValues();	 
 	//Calculate the Need Matrix	 
-	gfg.calculateNeed();			 
+	b.calculateNeed();			 
 			
 	// Check whether system is in safe state or not 
-	gfg.isSafe();		 
+	b.isSafe();		 
 	} 
 } 
