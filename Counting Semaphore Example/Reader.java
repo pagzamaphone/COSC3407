@@ -1,5 +1,3 @@
-package whatever;
-
 public class Reader implements Runnable {
 	private Library library;
 	public Reader(Library library) {
