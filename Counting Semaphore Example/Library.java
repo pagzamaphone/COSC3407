@@ -1,5 +1,3 @@
-package whatever;
-
 import java.util.concurrent.Semaphore;
 public class Library {
 	   private static final int MAX_PERMIT = 3;
