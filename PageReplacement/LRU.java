@@ -1,5 +1,3 @@
-package whatever;
-
 
 public class LRU extends ReplacementAlgorithm
 {
