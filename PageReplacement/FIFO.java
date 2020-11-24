@@ -1,5 +1,3 @@
-package whatever;
-
 /**
  * This class implements the FIFO page-replacement strategy.
  */
