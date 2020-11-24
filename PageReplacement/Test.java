@@ -1,5 +1,3 @@
-package whatever;
-
 /**
  * Test harness for LRU and FIFO page replacement algorithms
  */
