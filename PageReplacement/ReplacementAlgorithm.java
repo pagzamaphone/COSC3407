@@ -1,10 +1,8 @@
-package whatever;
 
 /**
  * ReplacementAlgorithm.java 
  *
  */
-
 
 public abstract class ReplacementAlgorithm
 {
